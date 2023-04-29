@@ -12,7 +12,7 @@ mkdir bin
 make install
 ```
 
-## Starting ywm
+## Start ywm
 > Add this line to the end of the .xinitrc file on your system, to start ywm besides the XServer:
 ```
 exec ywm
