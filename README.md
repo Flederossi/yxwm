@@ -13,7 +13,7 @@ make install
 ```
 
 ## Starting ywm
-To start ywm besides the XServer, you can simply add this line to the end of your .xinitrc file:
+Add this line to the end of the .xinitrc file on your system, to start ywm besides the XServer:
 ```
 exec ywm
 ```
