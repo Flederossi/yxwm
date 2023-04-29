@@ -1,7 +1,7 @@
 # ywm
-A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight approach. It supports basic functionalities like open a terminal, format the size of the windows as well as manage the aspect ratio between them in a clean way. The windows are organized with a master window on the left and a window stack of the other windows on the right side of the screen (like the dwm standart configuration).
+A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight, stripped down approach. It supports basic functionalities like open a terminal, format the size of the windows as well as manage the aspect ratio between them in a clean way. The windows are organized with a master window on the left and a window stack of the other windows on the right side of the screen (like the dwm standart configuration).
 
-*Note: The wm is still experimental at this point. Therefore I would not recommend using ywm as your daily use window manager.*
+*Note: The wm is still experimental at this point. Therefore, I would not recommend using ywm as a window manager for everyday use due to the rather low functional scope.*
 
 ![Alt Text](https://github.com/Flederossi/ywm/blob/main/assets/screen.png)
 
