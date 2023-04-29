@@ -5,6 +5,8 @@ A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight
 
 ![Alt Text](https://github.com/Flederossi/ywm/blob/main/assets/screen.png)
 
+<br />
+
 ## Installation
 > Dependencies: libx11, libx11-dev
 ```
