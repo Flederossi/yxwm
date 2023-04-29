@@ -3,6 +3,8 @@ A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight
 
 *Note: The wm is still experimental at this point. Therefore, I would not recommend using ywm as a window manager for everyday use due to the rather low functional scope.*
 
+<br />
+
 ![Alt Text](https://github.com/Flederossi/ywm/blob/main/assets/screen.png)
 
 <br />
