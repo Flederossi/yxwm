@@ -32,4 +32,4 @@ startx
 | Mod + Esc | Quits the wm |
 
 ## Configuration
-There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file you can change to your needs, like the terminal and launcher which are opened at the keystroke events. After configuring the variables you need to recompile ywm.
+There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file you can change to your needs, like the terminal and launcher which are used at the specific keystroke events or the border settings. After configuring the variables you need to recompile ywm.
