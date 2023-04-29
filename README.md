@@ -22,11 +22,15 @@ startx
 ```
 
 ## Usage
+To control ywm you can use the following keystrokes:
 | Keystroke | Description |
 |-|-|
 | Mod + Return | Opens a new terminal |
 | Mod + Space | Opens the launcher |
 | Mod + Left | Expand the width of the side stack |
 | Mod + Right | Expand the width of the master window |
-| Mod + Q | Closes the selected window |
+| Mod + Q | Closes the selected window (the window the mouse is on) |
 | Mod + Esc | Quits the wm |
+
+## Configuration
+There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file you can change to your needs, like the terminal and launcher which are opened. After configuring the variables you need to recompile ywm.
