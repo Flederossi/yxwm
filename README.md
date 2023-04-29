@@ -22,7 +22,6 @@ startx
 ```
 
 ## Usage
-To control ywm you can use the following keystrokes:
 | Keystroke | Description |
 |-|-|
 | Mod + Return | Opens a new terminal |
