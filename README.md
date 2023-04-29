@@ -29,8 +29,8 @@ startx
 |-|-|
 | Mod + Return | Opens a new terminal |
 | Mod + Space | Opens the launcher |
-| Mod + Left | Expand the width of the side stack |
-| Mod + Right | Expand the width of the master window |
+| Mod + Left-Arrow | Expand the width of the side stack |
+| Mod + Right-Arrow | Expand the width of the master window |
 | Mod + Q | Closes the selected window (the window the mouse is on) |
 | Mod + Esc | Quits the wm |
 
