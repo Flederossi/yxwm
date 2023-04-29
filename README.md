@@ -35,4 +35,4 @@ startx
 <br />
 
 ## Configuration
-There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file you can change to your needs, like the terminal and launcher which are used at the specific keystroke events or the border settings. After configuring the variables, you need to recompile ywm.
+There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file which can be changed to fit the needs, like the terminal and the launcher which is used at the specific keystroke event or the border settings. After configuring the variables, ywm should be recompiled.
