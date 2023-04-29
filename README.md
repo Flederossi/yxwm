@@ -13,11 +13,11 @@ make install
 ```
 
 ## Starting ywm
-Add this line to the end of the .xinitrc file on your system, to start ywm besides the XServer:
+> Add this line to the end of the .xinitrc file on your system, to start ywm besides the XServer:
 ```
 exec ywm
 ```
-Then start the XServer:
+> Then start the XServer:
 ```
 startx
 ```
@@ -32,7 +32,7 @@ startx
 | Mod + Q | Closes the selected window (the window the mouse is on) |
 | Mod + Esc | Quits the wm |
 
-\
+<br />
 
 ## Configuration
 There are a few configuration options directly in the [main.c](https://github.com/Flederossi/ywm/blob/main/src/main.c) file you can change to your needs, like the terminal and launcher which are used at the specific keystroke events or the border settings. After configuring the variables, you need to recompile ywm.
