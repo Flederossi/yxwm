@@ -8,6 +8,7 @@ A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight
 ## Installation
 > Dependencies: libx11, libx11-dev
 ```
+mkdir bin
 make install
 ```
 
