@@ -1,6 +1,6 @@
 build:
-	gcc src/*.c -o bin/ywm -lX11
+	gcc src/*.c -o bin/yxwm -lX11
 install: build
-	cp bin/ywm /usr/bin/ywm
+	cp bin/yxwm /usr/bin/yxwm
 uninstall:
-	rm /usr/bin/ywm
+	rm /usr/bin/yxwm
