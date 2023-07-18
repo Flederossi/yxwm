@@ -1,5 +1,5 @@
 # yxwm
-A tiny (~67 loc) tiling window manager for X11 with a big focus on a lightweight, stripped down environment. It supports basic functionalities like open a terminal or a launcher, format the size of the windows as well as manage the aspect ratio between them in a clean way. The windows are organized with a master window on the left and a window stack of the other windows on the right side of the screen (like the dwm standard configuration).
+A tiny (~80 loc) tiling window manager for X11 with a big focus on a lightweight, stripped down environment. It supports basic functionalities like open a terminal or a launcher, format the size of the windows as well as manage the aspect ratio between them in a clean way. The windows are organized with a master window on the left and a window stack of the other windows on the right side of the screen (like the dwm standard configuration).
 
 *Note: The wm is still experimental at this point. Therefore, I would not recommend using yxwm as a window manager for everyday use due to the rather low functional scope.*
 
