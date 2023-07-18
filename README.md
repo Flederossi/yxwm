@@ -39,4 +39,4 @@ startx
 <br />
 
 ## Configuration
-There are a few configuration options directly in the [main.c](https://github.com/Flederossi/yxwm/blob/main/src/main.c) file which can be changed as needed, such as the terminal and launcher used on the specific keystroke event or the border settings. After configuring the variables, yxwm should be recompiled.
+You can configure yxwm in the [config.h](https://github.com/Flederossi/yxwm/blob/main/src/include/config.h) file. Every option is described with a small comment. After configuring the variables, yxwm should be recompiled.
