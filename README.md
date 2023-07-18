@@ -29,12 +29,13 @@ startx
 ## Usage
 | Keystroke | Description |
 |-|-|
-| Mod + Return | Opens a new terminal |
-| Mod + Space | Opens the launcher |
+| Mod + Return | Open a new terminal |
+| Mod + Space | Open the launcher |
 | Mod + Left-Arrow | Expand the width of the side stack |
 | Mod + Right-Arrow | Expand the width of the master window |
-| Mod + Q | Closes the selected window (the window the mouse is on) |
-| Mod + Esc | Quits the wm |
+| Mod + Backspace | Set the selected window (the window the mouse is on) as master window |
+| Mod + Q | Close the selected window |
+| Mod + Esc | Quit the wm |
 
 <br />
 
