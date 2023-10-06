@@ -2,9 +2,29 @@
 #include <unistd.h>
 #include <math.h>
 #include <X11/Xlib.h>
+#include <X11/Xatom.h>
 #include <X11/keysym.h>
 
 #include "config.h"
+
+int is_window(Display *dpy, Window w){
+	Atom actual_type;
+	int actual_format;
+	unsigned long nitems, bytes_after;
+	unsigned char *prop;
+
+	if (XGetWindowProperty(dpy, w, XInternAtom(dpy, "_NET_WM_WINDOW_TYPE", False), 0, 1, False, XA_ATOM, &actual_type, &actual_format, &nitems, &bytes_after, &prop) == Success){
+		if (actual_type == XA_ATOM && actual_format == 32 && nitems > 0){
+			Atom window_type = ((Atom *)prop)[0];
+			if (window_type == XInternAtom(dpy, "_NET_WM_WINDOW_TYPE_NORMAL", False)){
+				XFree(prop);
+				return 1;
+			}
+		}
+		XFree(prop);
+	}
+	return 0;
+}
 
 void update(Display *dpy, int off){
 	Window root, parent, *wins;
@@ -20,7 +40,7 @@ void update(Display *dpy, int off){
 
 	for (int i = 0; i < n; i++){
 		XGetWindowAttributes(dpy, wins[i], &attr);
-		if (attr.map_state == IsViewable){
+		if (attr.map_state == IsViewable && is_window(dpy, wins[i])){
 			XSetWindowBorderWidth(dpy, wins[i], BORDER);
 			XSetWindowBorder(dpy, wins[i], BORDER_COLOR);
 
@@ -65,12 +85,18 @@ void kill(Display *dpy, Window w){
 	XSendEvent(dpy, w, False, NoEventMask, &ev);
 }
 
+int errorHandler(Display *dpy, XErrorEvent *e){
+	return 0;
+}
+
 int main(){
 	Display *dpy;
 	XEvent ev;
 	XButtonEvent *evb;
 
 	if (!(dpy = XOpenDisplay(NULL))) return 1;
+
+	XSetErrorHandler(errorHandler);
 
 	int off = 0;
 	unsigned int offd = DefaultScreenOfDisplay(dpy)->width / 16;
